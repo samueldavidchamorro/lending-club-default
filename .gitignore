@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------- datos
+# Los CSV de Lending Club pesan 3,4 GB descomprimidos: no van al repositorio.
+# Se descargan de https://www.kaggle.com/datasets/wordsforthewise/lending-club
+data_tarea_1/
+*.csv
+*.csv.gz
+
+# ------------------------------------------------- artefactos del analisis
+# Se regeneran ejecutando los notebooks en orden.
+outputs/
+
+# ------------------------------------------------- construccion del libro
+_build/
+
+# ------------------------------------------------------------------ python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ------------------------------------------------------------------ sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Utilidad de sesion para seguir la ejecucion, no forma parte del entregable
+seguir_ejecucion.py
+
+.vscode/
+.idea/
+
+# Configuracion local de editores
+.vscode/
+.idea/

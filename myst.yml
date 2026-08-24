@@ -1,0 +1,59 @@
+# Configuracion del Jupyter Book (jupyter-book 2.x, sobre mystmd)
+# Documentacion: https://mystmd.org/guide/frontmatter
+version: 1
+
+project:
+  id: lending-club-default-2026-3
+  title: Predicción de default en Lending Club
+  subtitle: Clasificación supervisada y comparación scikit-learn / PySpark
+  description: >-
+    Proyecto integrador de Aprendizaje Automático sobre el conjunto Lending Club
+    (2007-2018Q4). Análisis exploratorio exhaustivo, preprocesamiento en dos
+    entornos, RandomForest con búsqueda de hiperparámetros, interpretabilidad con
+    LIME y comparación medida de rendimiento entre scikit-learn y PySpark sobre
+    1.345.310 préstamos.
+  keywords:
+    - machine learning
+    - riesgo de crédito
+    - Lending Club
+    - scikit-learn
+    - PySpark
+    - LIME
+    - análisis exploratorio de datos
+  authors:
+    - id: schamorro
+      name: Samuel Chamorro
+      roles: [Conceptualization, Formal analysis, Methodology, Software, Writing - original draft]
+    - id: jbarrios
+      name: Jesus Barrios
+      roles: [Conceptualization, Formal analysis, Methodology, Software, Writing - original draft]
+    - id: jlondono
+      name: Jacobo Londono
+      roles: [Conceptualization, Formal analysis, Methodology, Software, Writing - original draft]
+  # Si el repositorio se llama de otro modo, cambiar solo la parte posterior a la barra.
+  github: samueldavidchamorro/lending-club-default
+
+  # Los notebooks se incluyen con sus salidas ya calculadas: no se reejecutan
+  # durante la construccion del libro.
+  toc:
+    - file: index.md
+      title: Presentacion
+    - file: 01_eda.ipynb
+      title: Parte 1 - Analisis Exploratorio
+    - file: 02_modelado.ipynb
+      title: Parte 2 - Modelado y Comparacion
+
+  numbering:
+    headings: false
+
+  exclude:
+    - data_tarea_1/**
+    - outputs/**
+    - _build/**
+
+site:
+  template: book-theme
+  options:
+    logo_text: Lending Club · Default
+    hide_outline: false
+    hide_toc: false
